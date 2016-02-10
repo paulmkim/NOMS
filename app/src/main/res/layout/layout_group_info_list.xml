@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context="com.noms.noms.layout_group_info_list">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/member_name_group_info"
+        android:textSize="20sp"
+        android:text = "temp"
+        android:layout_alignTop="@+id/rfg_button_group_info"
+        android:layout_alignBottom="@+id/rfg_button_group_info"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="10dp"
+        android:textColor="@color/text_color"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="REMOVE"
+        android:onClick="removeAtomPayOnClickHandler"
+        android:id="@+id/rfg_button_group_info"/>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">NOMS</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_reset_password">Forgot Password</string>
+    <string name="title_activity_change_password">change_password</string>
+    <string name="title_activity_friends">friends</string>
+    <string name="Home">NOMS</string>
+    <string name="Logout">Logout</string>
+    <string name="Setting">Settings</string>
+    <string name="Group">Groups</string>
+    <string name="Friends">Friends</string>
+    <string name="title_activity_group">group</string>
+    <string name="title_activity_setting">setting</string>
+    <string name="title_activity_add_friends">add_friends</string>
+    <string name="title_activity_create_group">create_group</string>
+    <string name="title_activity_add_friends_to_new_group">add_friends_to_new_group</string>
+    <string name="title_activity_layout_group_list">layout_group_list</string>
+    <string name="title_activity_group_info">group_info</string>
+    <string name="title_activity_layout_group_info_list">layout_group_info_list</string>
+    <string name="title_activity_add_friends_to_group">add_friends_to_group</string>
+    <string name="title_activity_layout_aftg_list">layout_aftg_list</string>
+    <string name="title_activity_events">NOMS</string>
+    <string name="title_activity_new_event">new_event</string>
+    <string name="title_activity_invite_friends">invite_friends</string>
+
+    <color name="main_color">#ff751a</color>
+    <color name="secondary_color">#bfbfbf</color>
+    <color name="gray">#f2f2f2</color>
+    <color name="text_color">#000000</color>
+
+
+    <string name="UNCLICKED_COLOR">#FFFFFF</string>
+    <string name="CLICKED_COLOR">#D3D3D3</string>
+    <string name="title_activity_user_info">user_info</string>
+    <string name="title_activity_upcoming_events">upcoming_events</string>
+    <string name="title_activity_event_details">event_details</string>
+    <string name="title_activity_event_members">event_members</string>
+</resources>

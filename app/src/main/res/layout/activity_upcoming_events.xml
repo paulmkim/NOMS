@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.noms.noms.events_folder.upcoming_events"
+    android:background="@color/gray">
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/events_list_upcoming_events"
+        android:layout_marginTop="60dp">
+
+    </ListView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invited"
+        android:id="@+id/unsure_button_upcoming_events"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_secondary_color"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Going"
+        android:id="@+id/going_button_upcoming_events"
+        android:layout_alignTop="@+id/unsure_button_upcoming_events"
+        android:layout_toLeftOf="@+id/unsure_button_upcoming_events"
+        android:layout_toStartOf="@+id/unsure_button_upcoming_events"
+        android:background="@drawable/button_secondary_color"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not Going"
+        android:id="@+id/not_going_button_upcoming_events"
+        android:layout_alignTop="@+id/unsure_button_upcoming_events"
+        android:layout_toRightOf="@+id/unsure_button_upcoming_events"
+        android:layout_toEndOf="@+id/unsure_button_upcoming_events"
+        android:background="@drawable/button_secondary_color"
+        android:layout_marginLeft="10dp"/>
+
+
+</RelativeLayout>

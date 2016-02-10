@@ -1,0 +1,208 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.noms.noms.events_folder.new_event">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:background="@color/gray">
+
+        <TextView
+            android:id="@+id/event_name_text_NE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event Name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/start_time_text_NE"
+            android:layout_alignStart="@+id/start_time_text_NE" />
+
+        <EditText
+            android:id="@+id/event_name_TF_NE"
+            android:singleLine="true"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/event_name_text_NE"
+            android:layout_alignStart="@+id/event_name_text_NE"
+            android:layout_below="@+id/event_name_text_NE" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event Address"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_below="@+id/event_name_TF_NE"
+            android:layout_alignLeft="@+id/event_name_TF_NE"
+            android:layout_alignStart="@+id/event_name_TF_NE"
+            android:layout_marginTop="26dp" />
+
+        <EditText
+            android:id="@+id/event_address_TF_NE"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/textView2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Event Date"
+            android:id="@+id/event_date_text_NE"
+            android:layout_below="@+id/event_address_TF_NE"
+            android:layout_alignLeft="@+id/event_address_TF_NE"
+            android:layout_alignStart="@+id/event_address_TF_NE"
+            android:layout_marginTop="39dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today"
+            android:id="@+id/today_button_NE"
+            android:layout_marginTop="19dp"
+            android:layout_below="@+id/event_date_text_NE"
+            android:layout_toLeftOf="@+id/tomorrow_button_NE"
+            android:layout_marginRight="20dp"
+            android:layout_toStartOf="@+id/tomorrow_button_NE"
+            android:background="@drawable/button_secondary_color"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tomorrow"
+            android:id="@+id/tomorrow_button_NE"
+            android:layout_alignTop="@+id/today_button_NE"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_secondary_color"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Day After"
+            android:id="@+id/day_after_button_NE"
+            android:layout_alignTop="@+id/tomorrow_button_NE"
+            android:layout_toRightOf="@+id/tomorrow_button_NE"
+            android:layout_toEndOf="@+id/tomorrow_button_NE"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/button_secondary_color"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Start Time"
+            android:id="@+id/start_time_text_NE"
+            android:layout_below="@+id/today_button_NE"
+            android:layout_alignRight="@+id/today_button_NE"
+            android:layout_alignEnd="@+id/today_button_NE"
+            android:layout_marginTop="23dp" />
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hour_picker_NE"
+            android:layout_alignTop="@+id/minute_picker_NE"
+            android:layout_alignLeft="@+id/today_button_NE"
+            android:layout_alignStart="@+id/today_button_NE" />
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/minute_picker_NE"
+            android:layout_below="@+id/start_time_text_NE"
+            android:layout_toRightOf="@+id/time_colon_NE"
+            android:layout_toEndOf="@+id/time_colon_NE"
+            android:layout_marginTop="19dp" />
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/am_pm_picker_NE"
+            android:layout_alignTop="@+id/minute_picker_NE"
+            android:layout_toRightOf="@+id/tomorrow_button_NE"
+            android:layout_toEndOf="@+id/tomorrow_button_NE" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=":"
+            android:id="@+id/time_colon_NE"
+            android:layout_marginBottom="76dp"
+            android:layout_alignBottom="@+id/minute_picker_NE"
+            android:layout_alignRight="@+id/start_time_text_NE"
+            android:layout_alignEnd="@+id/start_time_text_NE"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Duration"
+            android:id="@+id/duration_text_NE"
+            android:layout_below="@+id/hour_picker_NE"
+            android:layout_alignLeft="@+id/event_date_text_NE"
+            android:layout_alignStart="@+id/event_date_text_NE"
+            android:layout_marginTop="22dp" />
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dur_hour_picker_NE"
+            android:layout_below="@+id/duration_text_NE"
+            android:layout_alignRight="@+id/time_colon_NE"
+            android:layout_alignEnd="@+id/time_colon_NE" />
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dur_minute_picker_NE"
+            android:layout_alignTop="@+id/dur_hour_picker_NE"
+            android:layout_toRightOf="@+id/minute_picker_NE"
+            android:layout_toEndOf="@+id/minute_picker_NE" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="hour(s)"
+            android:id="@+id/hour_text_NE"
+            android:layout_marginTop="75dp"
+            android:layout_alignTop="@+id/dur_hour_picker_NE"
+            android:layout_toRightOf="@+id/time_colon_NE"
+            android:layout_toEndOf="@+id/time_colon_NE" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="minute(s)"
+            android:id="@+id/minute_text_NE"
+            android:layout_alignTop="@+id/hour_text_NE"
+            android:layout_toRightOf="@+id/dur_minute_picker_NE"
+            android:layout_toEndOf="@+id/dur_minute_picker_NE" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invite Friends"
+            android:id="@+id/invite_friends_button"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/dur_minute_picker_NE"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_main_color"
+            android:width="130dp"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>
